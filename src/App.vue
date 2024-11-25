@@ -32,6 +32,27 @@
         </form>
       </div>
     </div>
+
+
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Samsung</h5>
+        <p class="card-text">25.11.2024</p>
+        <p class="card-text">$500</p>
+        <p class="card-text">x5</p>
+      </div>
+      <div class="card-footer text-end">
+        <button class="btn btn-outline-danger">Удалить</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
  </div>
 </template>
 
