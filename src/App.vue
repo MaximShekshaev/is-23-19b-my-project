@@ -51,7 +51,11 @@
   </div>
   </div>
 
-
+<div class="row my-4">
+  <div class="col">
+    <h3 class="text-end">Общая сумма: $500</h3>
+  </div>
+</div>
 
  </div>
 </template>
