@@ -33,7 +33,7 @@ const products = ref([
 ]);
 const name = ref('');
 const date = ref('');
-const count = ref(1);
+const count = ref(0);
 const price = ref(0);
 
 
@@ -71,19 +71,31 @@ const totalSum = computed(() => {
         <form action="">     
           <div class="mb-3">
             <label for="name" class="form-label">Название товара</label>
-            <input type="text" v-model="name" class="form-control" id="name">
+            <input type="text" v-model="name" class="form-control" :class="{'is-invalid' : !name}" id="name">
+            <div class="invalid-feedback">
+       Заполните пожалуйста название.
+      </div>
             </div>
             <div class="mb-3">
             <label for="date" class="form-label">Дата добавления</label>
-            <input type="date" v-model="date" class="form-control" id="date">
+            <input type="date" v-model="date" class="form-control" :class="{'is-invalid' : !date}" id="date">
+            <div class="invalid-feedback">
+        Заполните пожалуйста дату.
+      </div>
             </div>
             <div class="mb-3">
             <label for="count" class="form-label">Количество</label>
-            <input type="number" v-model="count" class="form-control" id="count">
+            <input type="number" v-model="count" class="form-control" :class="{'is-invalid' : !count}" id="count">
+            <div class="invalid-feedback">
+        Заполинте количество.
+      </div>
             </div>
             <div class="mb-3">
             <label for="price" class="form-label">Цена</label>
-            <input type="number" v-model="price" class="form-control" id="price">
+            <input type="number" v-model="price" class="form-control" :class="{'is-invalid' : !price}" id="price">
+            <div class="invalid-feedback">
+        Укажите цену.
+      </div>
             </div>
 
             <div class="mb-3 text-center">
